@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Environmental Science — Exam Cram Notes 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #f5f7f2;
+    --surface: #ffffff;
+    --card: #ffffff;
+    --border: #d8e0d0;
+    --text: #1a2218;
+    --muted: #5a6b55;
+    --faint: #e8ede4;
+    --green: #2d6a4f;
+    --green-light: #d8f3dc;
+    --teal: #1b7a6e;
+    --teal-light: #d0f0ec;
+    --earth: #6b4226;
+    --earth-light: #f5e6db;
+    --sky: #1565a8;
+    --sky-light: #ddeeff;
+    --amber: #8a5500;
+    --amber-light: #fff3cc;
+    --red: #a31515;
+    --red-light: #fde8e8;
+    --purple: #5b2d8e;
+    --purple-light: #ede0fc;
+    --u1: #2d6a4f; --u1l: #d8f3dc;
+    --u2: #1565a8; --u2l: #ddeeff;
+    --u3: #1b7a6e; --u3l: #d0f0ec;
+    --u4: #6b4226; --u4l: #f5e6db;
+    --u5: #7a5c00; --u5l: #fff3cc;
+    --u6: #a31515; --u6l: #fde8e8;
+    --u7: #5b2d8e; --u7l: #ede0fc;
+    --u8: #1b5e7a; --u8l: #d0eaf8;
+    --u9: #3d5a00; --u9l: #ecf5d0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .header {
+    background: var(--green);
+    color: white;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+  }
+  .header h1 { font-size: 2.4rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .header p { opacity: 0.85; font-size: 0.95rem; }
+  .header .tags { display: flex; gap: 8px; justify-content: center; margin-top: 1.2rem; flex-wrap: wrap; }
+  .tag {
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+  }
+
+  .nav {
+    display: flex;
+    gap: 6px;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .nav a {
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    transition: all 0.15s;
+  }
+  .nav a:hover { background: var(--faint); color: var(--text); }
+
+  .content { max-width: 980px; margin: 0 auto; padding: 2rem; }
+
+  .unit-section { margin-bottom: 3rem; }
+
+  .unit-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 1.4rem;
+    padding: 1rem 1.4rem;
+    border-radius: 12px;
+    border-left: 5px solid;
+  }
+  .unit-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .unit-title h2 { font-size: 1.2rem; font-weight: 600; }
+  .unit-title p { font-size: 0.82rem; margin-top: 2px; }
+  .weight-badge {
+    margin-left: auto;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 14px;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+  }
+  .card h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.65rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card h3 .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .card ul { list-style: none; }
+  .card ul li {
+    font-size: 0.855rem;
+    color: var(--muted);
+    padding: 3.5px 0;
+    border-bottom: 1px solid var(--faint);
+    line-height: 1.5;
+  }
+  .card ul li:last-child { border-bottom: none; }
+  .card ul li strong { color: var(--text); font-weight: 600; }
+
+  .full-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.3rem 1.5rem;
+    margin-bottom: 14px;
+  }
+  .full-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  th {
+    background: var(--faint);
+    padding: 7px 11px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td { padding: 7px 11px; border-bottom: 1px solid var(--faint); color: var(--muted); }
+  td strong { color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+
+  .tip {
+    background: var(--amber-light);
+    border: 1px solid #e8c84a;
+    border-radius: 8px;
+    padding: 8px 13px;
+    font-size: 0.84rem;
+    margin-top: 10px;
+    color: var(--amber);
+  }
+  .tip strong { color: #5a3800; }
+
+  .alert {
+    background: var(--red-light);
+    border: 1px solid #f5b5b5;
+    border-radius: 8px;
+    padding: 8px 13px;
+    font-size: 0.84rem;
+    margin-top: 10px;
+    color: var(--red);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  @media (max-width: 580px) { .two-col { grid-template-columns: 1fr; } }
+
+  .frq-section {
+    background: white;
+    border: 2px solid var(--green);
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .frq-section h3 { color: var(--green); font-size: 1rem; margin-bottom: 1rem; }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    background: white;
+  }
+
+  /* unit color bindings */
+  .u1 .unit-header { background: var(--u1l); border-color: var(--u1); }
+  .u1 .unit-badge { background: var(--u1l); color: var(--u1); }
+  .u1 .unit-title h2 { color: var(--u1); }
+  .u1 .unit-title p { color: var(--u1); opacity: 0.75; }
+  .u1 .weight-badge { background: var(--u1); color: white; }
+  .u1 .card h3 .dot { background: var(--u1); }
+
+  .u2 .unit-header { background: var(--u2l); border-color: var(--u2); }
+  .u2 .unit-badge { background: var(--u2l); color: var(--u2); }
+  .u2 .unit-title h2 { color: var(--u2); }
+  .u2 .unit-title p { color: var(--u2); opacity: 0.75; }
+  .u2 .weight-badge { background: var(--u2); color: white; }
+  .u2 .card h3 .dot { background: var(--u2); }
+
+  .u3 .unit-header { background: var(--u3l); border-color: var(--u3); }
+  .u3 .unit-badge { background: var(--u3l); color: var(--u3); }
+  .u3 .unit-title h2 { color: var(--u3); }
+  .u3 .unit-title p { color: var(--u3); opacity: 0.75; }
+  .u3 .weight-badge { background: var(--u3); color: white; }
+  .u3 .card h3 .dot { background: var(--u3); }
+
+  .u4 .unit-header { background: var(--u4l); border-color: var(--u4); }
+  .u4 .unit-badge { background: var(--u4l); color: var(--u4); }
+  .u4 .unit-title h2 { color: var(--u4); }
+  .u4 .unit-title p { color: var(--u4); opacity: 0.75; }
+  .u4 .weight-badge { background: var(--u4); color: white; }
+  .u4 .card h3 .dot { background: var(--u4); }
+
+  .u5 .unit-header { background: var(--u5l); border-color: var(--u5); }
+  .u5 .unit-badge { background: var(--u5l); color: var(--u5); }
+  .u5 .unit-title h2 { color: var(--u5); }
+  .u5 .unit-title p { color: var(--u5); opacity: 0.75; }
+  .u5 .weight-badge { background: var(--u5); color: white; }
+  .u5 .card h3 .dot { background: var(--u5); }
+
+  .u6 .unit-header { background: var(--u6l); border-color: var(--u6); }
+  .u6 .unit-badge { background: var(--u6l); color: var(--u6); }
+  .u6 .unit-title h2 { color: var(--u6); }
+  .u6 .unit-title p { color: var(--u6); opacity: 0.75; }
+  .u6 .weight-badge { background: var(--u6); color: white; }
+  .u6 .card h3 .dot { background: var(--u6); }
+
+  .u7 .unit-header { background: var(--u7l); border-color: var(--u7); }
+  .u7 .unit-badge { background: var(--u7l); color: var(--u7); }
+  .u7 .unit-title h2 { color: var(--u7); }
+  .u7 .unit-title p { color: var(--u7); opacity: 0.75; }
+  .u7 .weight-badge { background: var(--u7); color: white; }
+  .u7 .card h3 .dot { background: var(--u7); }
+
+  .u8 .unit-header { background: var(--u8l); border-color: var(--u8); }
+  .u8 .unit-badge { background: var(--u8l); color: var(--u8); }
+  .u8 .unit-title h2 { color: var(--u8); }
+  .u8 .unit-title p { color: var(--u8); opacity: 0.75; }
+  .u8 .weight-badge { background: var(--u8); color: white; }
+  .u8 .card h3 .dot { background: var(--u8); }
+
+  .u9 .unit-header { background: var(--u9l); border-color: var(--u9); }
+  .u9 .unit-badge { background: var(--u9l); color: var(--u9); }
+  .u9 .unit-title h2 { color: var(--u9); }
+  .u9 .unit-title p { color: var(--u9); opacity: 0.75; }
+  .u9 .weight-badge { background: var(--u9); color: white; }
+  .u9 .card h3 .dot { background: var(--u9); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>AP Environmental Science</h1>
+  <p>Complete cram notes — all 9 units, exam-focused, concept-dense</p>
+  <div class="tags">
+    <span class="tag">U1: Earth Systems</span>
+    <span class="tag">U2: Biodiversity</span>
+    <span class="tag">U3: Populations</span>
+    <span class="tag">U4: Earth's Resources</span>
+    <span class="tag">U5: Land & Food</span>
+    <span class="tag">U6: Energy</span>
+    <span class="tag">U7: Atmosphere</span>
+    <span class="tag">U8: Aquatic</span>
+    <span class="tag">U9: Global Change</span>
+  </div>
+</div>
+
+<nav class="nav">
+  <a href="#u1">U1 Earth Systems</a>
+  <a href="#u2">U2 Biodiversity</a>
+  <a href="#u3">U3 Populations</a>
+  <a href="#u4">U4 Resources</a>
+  <a href="#u5">U5 Land & Food</a>
+  <a href="#u6">U6 Energy</a>
+  <a href="#u7">U7 Atmosphere</a>
+  <a href="#u8">U8 Aquatic</a>
+  <a href="#u9">U9 Global Change</a>
+  <a href="#frq">FRQ Tips</a>
+</nav>
+
+<div class="content">
+
+<!-- ===== UNIT 1 ===== -->
+<div id="u1" class="unit-section u1">
+  <div class="unit-header">
+    <div class="unit-badge">1</div>
+    <div class="unit-title">
+      <h2>The Living World: Ecosystems</h2>
+      <p>Ecosystems, energy flow, biogeochemical cycles, biomes</p>
+    </div>
+    <div class="weight-badge">~6–8%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Ecosystem Basics</h3>
+      <ul>
+        <li><strong>Ecosystem</strong> — community of organisms + their abiotic environment</li>
+        <li><strong>Biotic factors</strong> — living (plants, animals, bacteria)</li>
+        <li><strong>Abiotic factors</strong> — nonliving (temp, water, light, soil)</li>
+        <li><strong>Producer (autotroph)</strong> — makes own food via photosynthesis</li>
+        <li><strong>Consumer (heterotroph)</strong> — eats other organisms</li>
+        <li><strong>Decomposer</strong> — breaks down dead matter, returns nutrients to soil</li>
+        <li><strong>Detritivore</strong> — eats dead organic matter (earthworms, dung beetles)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Energy Flow</h3>
+      <ul>
+        <li><strong>10% rule</strong> — only ~10% of energy transfers between trophic levels</li>
+        <li><strong>Food chain</strong> — linear energy pathway</li>
+        <li><strong>Food web</strong> — complex interconnected food chains</li>
+        <li><strong>Trophic levels</strong> — producers → primary consumers → secondary → tertiary</li>
+        <li><strong>Gross Primary Productivity (GPP)</strong> — total photosynthesis</li>
+        <li><strong>Net Primary Productivity (NPP)</strong> — GPP minus plant respiration; energy available to consumers</li>
+        <li>Energy is lost as heat at each level — matter cycles, energy flows</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Carbon Cycle</h3>
+      <ul>
+        <li>Carbon moves through atmosphere, organisms, oceans, and rock</li>
+        <li><strong>Photosynthesis</strong> — pulls CO₂ from atmosphere into biomass</li>
+        <li><strong>Respiration</strong> — releases CO₂ back to atmosphere</li>
+        <li><strong>Combustion</strong> — burning fossil fuels releases stored carbon</li>
+        <li><strong>Decomposition</strong> — releases CO₂ and methane</li>
+        <li><strong>Carbon sinks</strong> — oceans, forests, soil absorb more carbon than they release</li>
+        <li><strong>Ocean acidification</strong> — CO₂ dissolves in seawater → carbonic acid → lower pH</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Nitrogen Cycle</h3>
+      <ul>
+        <li>N₂ gas makes up ~78% of atmosphere but most organisms can't use it directly</li>
+        <li><strong>Nitrogen fixation</strong> — bacteria (Rhizobium) convert N₂ → ammonia (NH₃)</li>
+        <li><strong>Nitrification</strong> — bacteria convert NH₃ → nitrites → nitrates (usable by plants)</li>
+        <li><strong>Denitrification</strong> — bacteria convert nitrates back to N₂ gas</li>
+        <li><strong>Assimilation</strong> — plants absorb nitrates; animals eat plants</li>
+        <li>Excess fertilizer → nutrient runoff → eutrophication</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Phosphorus & Water Cycles</h3>
+      <ul>
+        <li><strong>Phosphorus cycle</strong> — no atmospheric phase; moves through rock, soil, water; released by weathering</li>
+        <li>Phosphorus often the limiting nutrient in aquatic ecosystems</li>
+        <li><strong>Water cycle</strong> — evaporation → condensation → precipitation → runoff/infiltration</li>
+        <li><strong>Transpiration</strong> — water loss through plant leaves</li>
+        <li><strong>Evapotranspiration</strong> — evaporation + transpiration combined</li>
+        <li><strong>Groundwater</strong> — stored in aquifers; recharged slowly</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Biomes</h3>
+      <ul>
+        <li><strong>Tropical rainforest</strong> — high biodiversity, hot & wet year-round, thin nutrient-poor soil</li>
+        <li><strong>Temperate deciduous forest</strong> — 4 seasons, moderate rainfall, fertile soil</li>
+        <li><strong>Grassland/savanna</strong> — moderate rainfall, fires maintain structure</li>
+        <li><strong>Desert</strong> — very low precipitation (&lt;25cm/yr), extreme temps</li>
+        <li><strong>Tundra</strong> — permafrost, very cold, low biodiversity, treeless</li>
+        <li><strong>Taiga (boreal forest)</strong> — coniferous trees, cold, largest land biome</li>
+        <li><strong>Chaparral</strong> — Mediterranean climate, fire-adapted shrubs</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Ecological Succession</h3>
+      <ul>
+        <li><strong>Primary succession</strong> — bare rock/new land (no soil); starts with pioneer species (lichens)</li>
+        <li><strong>Secondary succession</strong> — disturbed land with soil remaining; faster</li>
+        <li><strong>Pioneer species</strong> — first colonizers; tolerant of harsh conditions</li>
+        <li><strong>Climax community</strong> — stable endpoint of succession</li>
+        <li>Each stage modifies the environment for the next</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 2 ===== -->
+<div id="u2" class="unit-section u2">
+  <div class="unit-header">
+    <div class="unit-badge">2</div>
+    <div class="unit-title">
+      <h2>The Living World: Biodiversity</h2>
+      <p>Natural selection, species interactions, ecosystem services</p>
+    </div>
+    <div class="weight-badge">~6–8%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Natural Selection & Evolution</h3>
+      <ul>
+        <li>Individuals with traits better suited to environment survive and reproduce more</li>
+        <li><strong>Adaptations</strong> — heritable traits that increase fitness</li>
+        <li><strong>Speciation</strong> — formation of new species (often from geographic isolation)</li>
+        <li><strong>Genetic diversity</strong> — variety within a species; buffer against disease/change</li>
+        <li><strong>Bottleneck effect</strong> — population crash reduces genetic diversity</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Species Interactions</h3>
+      <ul>
+        <li><strong>Predation</strong> — predator benefits (+), prey harmed (−)</li>
+        <li><strong>Competition</strong> — both harmed (−/−); for same resources</li>
+        <li><strong>Mutualism</strong> — both benefit (+/+); e.g., bee-flower, mycorrhizae</li>
+        <li><strong>Commensalism</strong> — one benefits, other unaffected (+/0); e.g., barnacles on whales</li>
+        <li><strong>Parasitism</strong> — parasite benefits (+), host harmed (−); e.g., tapeworm</li>
+        <li><strong>Keystone species</strong> — disproportionately large effect on ecosystem (e.g., sea otters)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Biodiversity & Ecosystem Services</h3>
+      <ul>
+        <li><strong>Biodiversity</strong> — variety of life (genetic, species, ecosystem)</li>
+        <li>Biodiversity is highest in tropical regions near equator</li>
+        <li><strong>Ecosystem services</strong> — provisioning (food, water), regulating (climate, floods), cultural, supporting (nutrient cycling)</li>
+        <li><strong>Island biogeography</strong> — larger, less isolated islands have more species</li>
+        <li><strong>Indicator species</strong> — sensitive to environmental change; signal ecosystem health (e.g., amphibians)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Threats to Biodiversity (HIPPO)</h3>
+      <ul>
+        <li><strong>H</strong>abitat destruction — #1 cause of species loss</li>
+        <li><strong>I</strong>nvasive species — outcompete natives, no natural predators</li>
+        <li><strong>P</strong>ollution — degrades habitat quality</li>
+        <li><strong>P</strong>opulation growth (human) — demands more resources</li>
+        <li><strong>O</strong>verharvesting — hunting/fishing beyond sustainable levels</li>
+        <li>Also: climate change, disease</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 3 ===== -->
+<div id="u3" class="unit-section u3">
+  <div class="unit-header">
+    <div class="unit-badge">3</div>
+    <div class="unit-title">
+      <h2>Populations</h2>
+      <p>Population dynamics, carrying capacity, human population</p>
+    </div>
+    <div class="weight-badge">~10–15%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Population Growth Models</h3>
+      <ul>
+        <li><strong>Exponential growth (J-curve)</strong> — unlimited resources; population grows faster as it gets larger</li>
+        <li><strong>Logistic growth (S-curve)</strong> — growth slows as population approaches carrying capacity (K)</li>
+        <li><strong>Carrying capacity (K)</strong> — maximum population an environment can sustain</li>
+        <li><strong>Limiting factors</strong> — food, water, space, predation, disease slow growth</li>
+        <li><strong>Density-dependent factors</strong> — effect increases as population grows (disease, competition)</li>
+        <li><strong>Density-independent factors</strong> — affect population regardless of size (flood, fire)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Reproductive Strategies</h3>
+      <ul>
+        <li><strong>r-selected species</strong> — many small offspring, little parental care, short lifespan (mice, insects, weeds)</li>
+        <li><strong>K-selected species</strong> — few large offspring, lots of parental care, long lifespan (elephants, humans, whales)</li>
+        <li><strong>Survivorship curves</strong>:<br>
+          — Type I: most survive to old age (K-selected, e.g., humans)<br>
+          — Type II: constant death rate (birds)<br>
+          — Type III: most die young (r-selected, e.g., oysters)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Human Population</h3>
+      <ul>
+        <li>World population ~8 billion; rapid growth since industrial revolution</li>
+        <li><strong>Demographic transition</strong> — 4 stages from high birth/death rates to low both (as country develops)</li>
+        <li><strong>Total Fertility Rate (TFR)</strong> — average children per woman; replacement level = 2.1</li>
+        <li><strong>Age structure diagrams</strong> — wide base = growing population; narrow base = declining</li>
+        <li><strong>Doubling time</strong> = 70 ÷ growth rate (%)</li>
+        <li>MDCs (developed) — low growth; LDCs (developing) — higher growth</li>
+      </ul>
+      <div class="tip"><strong>Calc tip:</strong> Doubling time = 70 / r%. If growth rate is 2%, doubling time = 35 years.</div>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Ecological Footprint & Sustainability</h3>
+      <ul>
+        <li><strong>Ecological footprint</strong> — land/water needed to sustain a person's consumption</li>
+        <li><strong>Biocapacity</strong> — amount of ecological services available</li>
+        <li><strong>Overshoot</strong> — demand exceeds biocapacity</li>
+        <li>Developed nations have much larger per capita footprints</li>
+        <li><strong>Sustainability</strong> — meeting present needs without compromising future generations' ability to meet theirs</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 4 ===== -->
+<div id="u4" class="unit-section u4">
+  <div class="unit-header">
+    <div class="unit-badge">4</div>
+    <div class="unit-title">
+      <h2>Earth's Systems and Resources</h2>
+      <p>Plate tectonics, soil, atmosphere layers, rock cycle</p>
+    </div>
+    <div class="weight-badge">~10–15%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Plate Tectonics</h3>
+      <ul>
+        <li><strong>Convergent boundary</strong> — plates collide; subduction, mountains, volcanoes, earthquakes</li>
+        <li><strong>Divergent boundary</strong> — plates separate; new crust forms (mid-ocean ridges)</li>
+        <li><strong>Transform boundary</strong> — plates slide past each other; earthquakes (e.g., San Andreas)</li>
+        <li><strong>Subduction</strong> — denser oceanic plate sinks under continental plate</li>
+        <li>Earthquakes & volcanoes concentrated at plate boundaries ("Ring of Fire")</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Soil</h3>
+      <ul>
+        <li><strong>Soil horizons</strong>: O (organic litter) → A (topsoil, humus) → B (subsoil, leached minerals) → C (parent material) → R (bedrock)</li>
+        <li><strong>Humus</strong> — decomposed organic matter; improves soil fertility and structure</li>
+        <li><strong>Soil texture</strong> — sand (large, drains fast), silt (medium), clay (small, holds water/nutrients)</li>
+        <li><strong>Loam</strong> — ideal mix of sand, silt, clay for agriculture</li>
+        <li><strong>Soil erosion</strong> — removal of topsoil by wind/water; worsened by deforestation</li>
+        <li><strong>Desertification</strong> — fertile land becomes desert; caused by overgrazing, deforestation, drought</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Rock Cycle</h3>
+      <ul>
+        <li><strong>Igneous rock</strong> — formed from cooled magma/lava (granite, basalt)</li>
+        <li><strong>Sedimentary rock</strong> — formed from compressed sediment layers (sandstone, limestone); contains fossils</li>
+        <li><strong>Metamorphic rock</strong> — existing rock transformed by heat/pressure (marble, slate)</li>
+        <li><strong>Weathering</strong> — physical or chemical breakdown of rock into sediment</li>
+        <li>Fossil fuels form from organic matter compressed in sedimentary rock over millions of years</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Atmosphere Layers</h3>
+      <ul>
+        <li><strong>Troposphere</strong> — 0–12km; weather occurs here; temp decreases with altitude</li>
+        <li><strong>Stratosphere</strong> — 12–50km; contains ozone layer; temp increases with altitude (ozone absorbs UV)</li>
+        <li><strong>Mesosphere</strong> — 50–80km; coldest layer; meteors burn up here</li>
+        <li><strong>Thermosphere</strong> — 80–700km; very hot; auroras occur here</li>
+        <li><strong>Coriolis effect</strong> — Earth's rotation deflects wind/water; right in NH, left in SH</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Solar Radiation & Earth's Energy</h3>
+      <ul>
+        <li><strong>Albedo</strong> — reflectivity of a surface; ice/snow high albedo; ocean/forest low albedo</li>
+        <li>Tropics receive most direct solar energy; poles receive least</li>
+        <li><strong>Seasons</strong> — caused by Earth's axial tilt (23.5°), not distance from sun</li>
+        <li><strong>El Niño</strong> — weakened trade winds → warm water moves east; drought in Australia/SE Asia, rain in W. Americas</li>
+        <li><strong>La Niña</strong> — opposite of El Niño; stronger trade winds</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Wind & Ocean Patterns</h3>
+      <ul>
+        <li><strong>Trade winds</strong> — blow from east in tropics (Hadley cells)</li>
+        <li><strong>Jet streams</strong> — fast-moving air in upper troposphere; affect weather</li>
+        <li><strong>Upwelling</strong> — cold, nutrient-rich water rises from deep ocean; highly productive (e.g., Peru)</li>
+        <li><strong>Thermohaline circulation</strong> — "ocean conveyor belt"; driven by temp and salinity differences; distributes heat globally</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 5 ===== -->
+<div id="u5" class="unit-section u5">
+  <div class="unit-header">
+    <div class="unit-badge">5</div>
+    <div class="unit-title">
+      <h2>Land and Food</h2>
+      <p>Agriculture, land use, food production impacts</p>
+    </div>
+    <div class="weight-badge">~15–20%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Agriculture Basics</h3>
+      <ul>
+        <li><strong>Green Revolution</strong> — 1960s–70s; high-yield crops, synthetic fertilizers, pesticides, irrigation → huge food output increase</li>
+        <li><strong>Monoculture</strong> — single crop grown over large area; efficient but vulnerable to pests/disease</li>
+        <li><strong>Crop rotation</strong> — alternating crops to restore soil nutrients</li>
+        <li><strong>Cover crops</strong> — grown off-season to prevent erosion, fix nitrogen</li>
+        <li><strong>GMOs</strong> — genetically modified organisms; higher yield, pest resistance; controversial</li>
+        <li><strong>Organic farming</strong> — no synthetic inputs; lower yield but less environmental impact</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Soil Degradation & Irrigation</h3>
+      <ul>
+        <li><strong>Salinization</strong> — salt buildup in irrigated soil; makes land infertile</li>
+        <li><strong>Waterlogging</strong> — over-irrigation saturates soil; deprives roots of oxygen</li>
+        <li><strong>Contour plowing</strong> — plowing along hillside contours to reduce erosion</li>
+        <li><strong>Terracing</strong> — cutting flat steps into hillsides for farming</li>
+        <li><strong>Windbreaks (shelterbelts)</strong> — rows of trees to slow wind erosion</li>
+        <li><strong>No-till farming</strong> — avoids plowing; reduces erosion, preserves soil structure</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Pesticides & Fertilizers</h3>
+      <ul>
+        <li><strong>Pesticides</strong> — insecticides, herbicides, fungicides; kill target & non-target species</li>
+        <li><strong>Biological magnification (bioaccumulation)</strong> — toxins concentrate up the food chain (DDT → osprey eggshells)</li>
+        <li><strong>Integrated Pest Management (IPM)</strong> — minimize pesticide use; use biological controls, crop rotation, resistant varieties</li>
+        <li><strong>Eutrophication</strong> — excess nitrogen/phosphorus fertilizer runoff → algal blooms → oxygen depletion → dead zones</li>
+        <li>Hypoxic zones: Gulf of Mexico dead zone (from Mississippi River ag runoff)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Meat Production & Food Systems</h3>
+      <ul>
+        <li>Producing 1 calorie of beef requires ~10+ calories of grain</li>
+        <li><strong>CAFOs</strong> — concentrated animal feeding operations; efficient but generate pollution (manure runoff, methane)</li>
+        <li><strong>Aquaculture</strong> — fish farming; reduces pressure on wild fisheries but can pollute</li>
+        <li><strong>Overfishing</strong> — harvesting fish faster than they can reproduce; collapse of fisheries</li>
+        <li><strong>Bycatch</strong> — unintended species caught in fishing nets</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Land Use & Deforestation</h3>
+      <ul>
+        <li><strong>Deforestation</strong> — increases CO₂, reduces biodiversity, increases erosion, disrupts water cycle</li>
+        <li>Tropical rainforests are most at risk; cleared for agriculture and cattle</li>
+        <li><strong>Slash and burn</strong> — cut + burn forest for farmland; nutrients rapidly depleted</li>
+        <li><strong>Urban sprawl</strong> — low-density expansion of cities into surrounding land; increases impervious surfaces → more runoff</li>
+        <li><strong>Habitat fragmentation</strong> — splitting habitat into patches; isolates populations</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Mining & Resource Extraction</h3>
+      <ul>
+        <li><strong>Surface mining</strong> — removes overlying material (strip mining, open-pit); cheaper but highly disruptive</li>
+        <li><strong>Subsurface mining</strong> — underground tunnels; less surface damage but more dangerous</li>
+        <li><strong>Acid mine drainage</strong> — sulfide minerals + water + oxygen → sulfuric acid → toxic runoff</li>
+        <li><strong>Mountaintop removal</strong> — blasts off mountaintops for coal; buries streams</li>
+        <li>Surface Mining Control and Reclamation Act (SMCRA) — requires land restoration after mining</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 6 ===== -->
+<div id="u6" class="unit-section u6">
+  <div class="unit-header">
+    <div class="unit-badge">6</div>
+    <div class="unit-title">
+      <h2>Energy Resources and Consumption</h2>
+      <p>Fossil fuels, nuclear, renewables, energy policy</p>
+    </div>
+    <div class="weight-badge">~15–20%</div>
+  </div>
+
+  <div class="full-card">
+    <h3>Energy Sources Comparison</h3>
+    <table>
+      <tr><th>Source</th><th>Advantages</th><th>Disadvantages</th></tr>
+      <tr><td><strong>Coal</strong></td><td>Abundant, cheap, reliable</td><td>Most CO₂ + pollutants; mining damage; acid rain</td></tr>
+      <tr><td><strong>Oil/Petroleum</strong></td><td>Energy-dense, portable</td><td>Spills, CO₂, limited reserves, geopolitical issues</td></tr>
+      <tr><td><strong>Natural gas</strong></td><td>Cleaner than coal, efficient</td><td>Still emits CO₂; methane leaks; fracking issues</td></tr>
+      <tr><td><strong>Nuclear</strong></td><td>No CO₂, reliable, high output</td><td>Radioactive waste, meltdown risk, expensive</td></tr>
+      <tr><td><strong>Solar</strong></td><td>No emissions, infinite</td><td>Intermittent, land use, manufacturing impacts</td></tr>
+      <tr><td><strong>Wind</strong></td><td>No emissions, cheap per kWh</td><td>Intermittent, bird/bat deaths, noise, visual</td></tr>
+      <tr><td><strong>Hydroelectric</strong></td><td>Reliable, no direct emissions</td><td>Habitat disruption, dam failures, fish migration</td></tr>
+      <tr><td><strong>Geothermal</strong></td><td>Reliable, low emissions</td><td>Location-limited, some H₂S emissions</td></tr>
+    </table>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Fossil Fuels</h3>
+      <ul>
+        <li>Formed over millions of years from compressed organic matter — nonrenewable</li>
+        <li><strong>Coal</strong> — solid; burning releases most CO₂; produces SO₂ (acid rain)</li>
+        <li><strong>Petroleum</strong> — liquid; refined into gasoline, diesel, plastics</li>
+        <li><strong>Natural gas</strong> — mostly methane (CH₄); cleanest fossil fuel but still emits CO₂</li>
+        <li><strong>Fracking (hydraulic fracturing)</strong> — injects fluid to fracture rock and release gas; water contamination risk</li>
+        <li><strong>EROI</strong> — Energy Return on Investment; ratio of energy gained to energy spent to get it</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Nuclear Energy</h3>
+      <ul>
+        <li><strong>Nuclear fission</strong> — splitting heavy atoms (uranium-235) releases massive energy</li>
+        <li>No greenhouse gas emissions during operation</li>
+        <li><strong>Cooling towers</strong> — release steam (water vapor), not smoke</li>
+        <li><strong>Radioactive waste</strong> — remains dangerous for thousands of years; no permanent storage solution in US</li>
+        <li><strong>Chernobyl (1986), Fukushima (2011)</strong> — major accident examples; long-term contamination</li>
+        <li><strong>Nuclear fusion</strong> — combining light atoms; cleaner, but not yet commercially viable</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Renewable Energy</h3>
+      <ul>
+        <li><strong>Solar PV</strong> — photovoltaic cells convert sunlight to electricity</li>
+        <li><strong>Concentrated solar</strong> — mirrors focus sunlight to heat fluid and drive turbines</li>
+        <li><strong>Wind turbines</strong> — convert kinetic energy of wind to electricity</li>
+        <li><strong>Hydropower</strong> — dams use falling water to spin turbines; most-used renewable globally</li>
+        <li><strong>Tidal/wave energy</strong> — uses ocean movement; limited locations</li>
+        <li><strong>Geothermal</strong> — uses Earth's heat; Iceland, California examples</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Biofuels & Energy Efficiency</h3>
+      <ul>
+        <li><strong>Ethanol</strong> — from corn/sugarcane; blended with gasoline; corn ethanol has poor EROI</li>
+        <li><strong>Biodiesel</strong> — from vegetable oils/animal fats; lower emissions than diesel</li>
+        <li><strong>Biomass</strong> — burning wood, waste, crops; technically renewable but emits CO₂</li>
+        <li><strong>Energy efficiency</strong> — more work per unit energy; saves money + reduces emissions</li>
+        <li><strong>Cogeneration (CHP)</strong> — captures waste heat from electricity generation for heating</li>
+        <li><strong>Green building / LEED</strong> — standards for energy-efficient construction</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 7 ===== -->
+<div id="u7" class="unit-section u7">
+  <div class="unit-header">
+    <div class="unit-badge">7</div>
+    <div class="unit-title">
+      <h2>Atmospheric Pollution</h2>
+      <p>Air pollutants, acid rain, ozone depletion, indoor pollution</p>
+    </div>
+    <div class="weight-badge">~7–10%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Primary vs. Secondary Pollutants</h3>
+      <ul>
+        <li><strong>Primary pollutant</strong> — emitted directly (CO, SO₂, NOₓ, particulates, lead)</li>
+        <li><strong>Secondary pollutant</strong> — formed in atmosphere through chemical reactions (ozone O₃, smog, sulfuric acid)</li>
+        <li><strong>Smog</strong> — photochemical smog (NOₓ + VOCs + sunlight → ozone); industrial smog (SO₂ + particulates)</li>
+        <li><strong>Thermal inversion</strong> — warm air traps cool polluted air near ground; traps smog</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Key Air Pollutants</h3>
+      <ul>
+        <li><strong>CO (carbon monoxide)</strong> — from incomplete combustion; binds hemoglobin; odorless, deadly</li>
+        <li><strong>SO₂ (sulfur dioxide)</strong> — from burning coal; → acid rain; respiratory irritant</li>
+        <li><strong>NOₓ (nitrogen oxides)</strong> — from cars/power plants; → smog + acid rain</li>
+        <li><strong>Particulate matter (PM)</strong> — fine particles from combustion; lung disease</li>
+        <li><strong>VOCs (volatile organic compounds)</strong> — from solvents, cars; form smog</li>
+        <li><strong>Lead</strong> — neurotoxin; eliminated from gasoline (Clean Air Act)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Acid Rain</h3>
+      <ul>
+        <li>SO₂ + NOₓ react with water vapor → sulfuric acid + nitric acid → pH drops in rain</li>
+        <li>Normal rainwater pH ~5.6; acid rain pH &lt;5.6</li>
+        <li>Damages forests, acidifies lakes (kills fish), weathers stone buildings</li>
+        <li><strong>Scrubbers</strong> — remove SO₂ from power plant emissions before release</li>
+        <li><strong>Catalytic converters</strong> — reduce NOₓ and CO from vehicles</li>
+        <li>Can be a transboundary problem — pollutants travel far from source</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Stratospheric Ozone Depletion</h3>
+      <ul>
+        <li>Ozone (O₃) in stratosphere absorbs harmful UV-B radiation</li>
+        <li><strong>CFCs (chlorofluorocarbons)</strong> — from refrigerants, aerosols; break down ozone in stratosphere</li>
+        <li>Cl from CFCs catalytically destroys ozone molecules</li>
+        <li><strong>Ozone hole</strong> — largest over Antarctica in spring; UV increase → skin cancer, cataracts</li>
+        <li><strong>Montreal Protocol (1987)</strong> — international treaty to phase out CFCs; ozone layer is recovering</li>
+        <li>Note: ground-level ozone (troposphere) is a pollutant; stratospheric ozone is protective</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Indoor Air Pollution</h3>
+      <ul>
+        <li><strong>Radon</strong> — naturally occurring radioactive gas from uranium decay in soil; seeps into basements; #1 cause of lung cancer after smoking</li>
+        <li><strong>Asbestos</strong> — insulation material; fibers cause mesothelioma</li>
+        <li><strong>Lead paint</strong> — in older homes; neurotoxin especially for children</li>
+        <li><strong>Formaldehyde</strong> — from building materials, furniture; carcinogen</li>
+        <li><strong>CO</strong> — from faulty heaters/stoves; install CO detectors</li>
+        <li>Cooking fires in developing countries — major cause of indoor air pollution deaths globally</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Clean Air Act & Regulations</h3>
+      <ul>
+        <li><strong>Clean Air Act (1970, amended 1990)</strong> — EPA sets National Ambient Air Quality Standards (NAAQS) for 6 "criteria pollutants"</li>
+        <li>6 criteria pollutants: CO, SO₂, NOₓ, O₃, PM, Pb</li>
+        <li><strong>Cap and trade</strong> — set pollution limit; companies buy/sell allowances</li>
+        <li><strong>Best Available Control Technology (BACT)</strong> — required for new sources</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 8 ===== -->
+<div id="u8" class="unit-section u8">
+  <div class="unit-header">
+    <div class="unit-badge">8</div>
+    <div class="unit-title">
+      <h2>Aquatic and Terrestrial Pollution</h2>
+      <p>Water pollution, solid waste, toxic pollutants</p>
+    </div>
+    <div class="weight-badge">~7–10%</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Water Pollution Types</h3>
+      <ul>
+        <li><strong>Point source</strong> — identifiable single source (pipe from factory, sewage outflow)</li>
+        <li><strong>Nonpoint source</strong> — diffuse, hard to trace (agricultural runoff, urban runoff)</li>
+        <li><strong>Eutrophication</strong> — nutrient enrichment → algal bloom → oxygen depletion → hypoxia → dead zone</li>
+        <li><strong>Thermal pollution</strong> — warm water discharged from power plants; decreases dissolved oxygen</li>
+        <li><strong>Sediment pollution</strong> — eroded soil clouds water, smothers organisms</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Waterborne Pathogens & Treatment</h3>
+      <ul>
+        <li>Untreated sewage carries cholera, typhoid, E. coli, hepatitis</li>
+        <li><strong>BOD (Biological Oxygen Demand)</strong> — amount of O₂ needed to decompose organic waste; high BOD = polluted water</li>
+        <li><strong>Water treatment</strong>: screening → settling → filtration → chlorination</li>
+        <li><strong>Septic systems</strong> — on-site wastewater treatment; can leach into groundwater</li>
+        <li><strong>Clean Water Act (1972)</strong> — regulates discharge of pollutants into US waterways; "fishable and swimmable"</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Groundwater & Drinking Water</h3>
+      <ul>
+        <li><strong>Aquifer</strong> — underground rock layer saturated with water</li>
+        <li><strong>Ogallala Aquifer</strong> — largest US aquifer; being depleted faster than recharged</li>
+        <li><strong>Saltwater intrusion</strong> — over-pumping coastal aquifers draws in seawater</li>
+        <li><strong>Safe Drinking Water Act (1974)</strong> — EPA sets maximum contaminant levels (MCLs)</li>
+        <li><strong>Flint, Michigan</strong> — example of lead water contamination from aging pipes</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Solid Waste & Hazardous Waste</h3>
+      <ul>
+        <li><strong>Municipal Solid Waste (MSW)</strong> — household/commercial trash</li>
+        <li><strong>Landfills</strong> — lined to prevent leachate; produce methane (can be captured for energy)</li>
+        <li><strong>Incineration</strong> — reduces volume, generates energy; releases toxins if not filtered</li>
+        <li><strong>Recycling</strong> — reduces energy use, raw material extraction</li>
+        <li><strong>Composting</strong> — organic matter → nutrient-rich soil amendment</li>
+        <li><strong>Superfund (CERCLA)</strong> — EPA program to clean up hazardous waste sites; "polluter pays"</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Toxic & Persistent Pollutants</h3>
+      <ul>
+        <li><strong>Heavy metals</strong> — mercury, lead, arsenic; bioaccumulate; neurotoxins</li>
+        <li><strong>Mercury</strong> — from coal burning; methylmercury in fish; Minamata disease</li>
+        <li><strong>PCBs / DDT / dioxins</strong> — persistent organic pollutants (POPs); fat-soluble, bioaccumulate</li>
+        <li><strong>Bioaccumulation</strong> — toxins build up in individual organisms</li>
+        <li><strong>Biomagnification</strong> — toxin concentration increases at higher trophic levels</li>
+        <li><strong>Endocrine disruptors</strong> — mimic hormones (BPA, atrazine); reproductive effects</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Ocean Pollution</h3>
+      <ul>
+        <li><strong>Plastic pollution</strong> — persists for centuries; microplastics ingested by marine life</li>
+        <li><strong>Great Pacific Garbage Patch</strong> — vast accumulation of plastics in Pacific gyre</li>
+        <li><strong>Oil spills</strong> — coat birds/mammals, smother bottom-dwellers (Deepwater Horizon, 2010)</li>
+        <li><strong>Oil dispersants</strong> — break oil into droplets; toxic to marine life</li>
+        <li>Marine dead zones from agricultural runoff (Gulf of Mexico largest)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIT 9 ===== -->
+<div id="u9" class="unit-section u9">
+  <div class="unit-header">
+    <div class="unit-badge">9</div>
+    <div class="unit-title">
+      <h2>Global Change</h2>
+      <p>Climate change, ozone, species loss, sustainability solutions</p>
+    </div>
+    <div class="weight-badge">~15–20%</div>
+  </div>
+
+  <div class="full-card">
+    <h3>The Greenhouse Effect & Climate Change</h3>
+    <div class="two-col">
+      <div>
+        <p class="section-label" style="color:var(--u9)">Greenhouse Gases (GHGs)</p>
+        <ul style="list-style:none;font-size:0.86rem;color:var(--muted)">
+          <li style="padding:3px 0"><strong style="color:var(--text)">CO₂</strong> — burning fossil fuels, deforestation; most abundant GHG by volume</li>
+          <li style="padding:3px 0"><strong style="color:var(--text)">Methane (CH₄)</strong> — livestock, rice paddies, landfills, wetlands; 25× more potent than CO₂ over 100 yrs</li>
+          <li style="padding:3px 0"><strong style="color:var(--text)">N₂O</strong> — fertilizers, animal waste; ~265× more potent than CO₂</li>
+          <li style="padding:3px 0"><strong style="color:var(--text)">Water vapor</strong> — most abundant GHG; amplifies warming</li>
+          <li style="padding:3px 0"><strong style="color:var(--text)">CFCs</strong> — refrigerants; potent GHGs + ozone destroyers</li>
+        </ul>
+      </div>
+      <div>
+        <p class="section-label" style="color:var(--u9)">Climate Change Impacts</p>
+        <ul style="list-style:none;font-size:0.86rem;color:var(--muted)">
+          <li style="padding:3px 0">Rising sea levels (thermal expansion + ice melt)</li>
+          <li style="padding:3px 0">More intense storms, droughts, floods</li>
+          <li style="padding:3px 0">Coral bleaching (thermal stress)</li>
+          <li style="padding:3px 0">Shifting species ranges and migration patterns</li>
+          <li style="padding:3px 0">Permafrost thaw → releases more methane (positive feedback)</li>
+          <li style="padding:3px 0">Ocean acidification (CO₂ + H₂O → carbonic acid)</li>
+          <li style="padding:3px 0">Arctic sea ice loss → less albedo → more warming (positive feedback)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip" style="margin-top:14px"><strong>Positive feedback loop example:</strong> Ice melts → lower albedo → more heat absorbed → more ice melts. This accelerates warming. A negative feedback dampens change (e.g., more evaporation → more clouds → less sunlight reaches surface).</div>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <h3><span class="dot"></span>Evidence for Climate Change</h3>
+      <ul>
+        <li>Rising atmospheric CO₂ (from 280 ppm pre-industrial → 420+ ppm today)</li>
+        <li>Rising average global temperatures (~1.1°C since pre-industrial)</li>
+        <li>Retreating glaciers and ice sheets worldwide</li>
+        <li>Rising sea levels (~20cm in past century)</li>
+        <li>Shifting seasons, earlier spring events</li>
+        <li>Ice core data — shows correlation of CO₂ and temperature over 800,000 years</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Mitigation vs. Adaptation</h3>
+      <ul>
+        <li><strong>Mitigation</strong> — reduce causes; cut GHG emissions (switch to renewables, efficiency, carbon capture)</li>
+        <li><strong>Adaptation</strong> — adjust to effects; sea walls, drought-resistant crops, early warning systems</li>
+        <li><strong>Carbon sequestration</strong> — capturing CO₂ (reforestation, soil, CCS technology)</li>
+        <li><strong>Carbon tax</strong> — price per ton of CO₂ emitted; incentivizes reduction</li>
+        <li><strong>Cap and trade</strong> — cap on total emissions; companies trade allowances</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>International Environmental Agreements</h3>
+      <ul>
+        <li><strong>Montreal Protocol (1987)</strong> — phase out CFCs; most successful international environmental treaty</li>
+        <li><strong>Kyoto Protocol (1997)</strong> — GHG reduction targets for developed nations; US never ratified</li>
+        <li><strong>Paris Agreement (2015)</strong> — keep warming below 2°C; voluntary national pledges (NDCs)</li>
+        <li><strong>CITES</strong> — regulates international trade of endangered species</li>
+        <li><strong>UN Convention on Biological Diversity</strong> — protect biodiversity globally</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Habitat Conservation</h3>
+      <ul>
+        <li><strong>Endangered Species Act (ESA, 1973)</strong> — protects listed species and critical habitat in the US</li>
+        <li><strong>Biosphere reserves</strong> — core protected + surrounding buffer zones</li>
+        <li><strong>Wildlife corridors</strong> — connect habitat fragments; allow species movement</li>
+        <li><strong>Restoration ecology</strong> — rehabilitate degraded ecosystems</li>
+        <li><strong>Ex-situ conservation</strong> — zoos, seed banks, captive breeding</li>
+        <li><strong>In-situ conservation</strong> — protect species in their natural habitat</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Sustainability Solutions</h3>
+      <ul>
+        <li><strong>Sustainable development</strong> — meeting current needs without compromising future generations</li>
+        <li><strong>Renewable energy transition</strong> — solar, wind, hydro replace fossil fuels</li>
+        <li><strong>Circular economy</strong> — reduce waste; resources loop back instead of landfill</li>
+        <li><strong>Smart growth / New urbanism</strong> — denser, walkable cities; less sprawl</li>
+        <li><strong>Ecotourism</strong> — sustainable tourism that funds conservation</li>
+        <li><strong>Environmental justice</strong> — fair distribution of environmental benefits and burdens</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="dot"></span>Key US Environmental Laws</h3>
+      <ul>
+        <li><strong>Clean Air Act (1970)</strong> — regulates air pollutants; created EPA</li>
+        <li><strong>Clean Water Act (1972)</strong> — regulates water discharges</li>
+        <li><strong>Safe Drinking Water Act (1974)</strong> — drinking water standards</li>
+        <li><strong>CERCLA / Superfund (1980)</strong> — hazardous waste cleanup</li>
+        <li><strong>NEPA (1969)</strong> — environmental impact statements required for federal projects</li>
+        <li><strong>Resource Conservation and Recovery Act (RCRA)</strong> — regulates solid and hazardous waste</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FRQ SECTION ===== -->
+<div id="frq" style="margin-top: 2rem;">
+  <div class="frq-section">
+    <h3>FRQ Tips — How to Maximize Your Score</h3>
+    <div class="two-col">
+      <div>
+        <p class="section-label" style="color:var(--green)">Structure & Format</p>
+        <ul style="list-style:none;font-size:0.87rem;color:var(--muted)">
+          <li style="padding:3px 0">• There are 3 FRQs — 70 minutes total (~23 min each)</li>
+          <li style="padding:3px 0">• Answer each part separately and label them (a, b, c...)</li>
+          <li style="padding:3px 0">• <strong style="color:var(--text)">Define → Apply → Explain</strong> for each concept</li>
+          <li style="padding:3px 0">• No bullet points needed — full sentences earn points</li>
+          <li style="padding:3px 0">• Show your math work for calculation questions</li>
+          <li style="padding:3px 0">• Units matter — always include them in calculations</li>
+          <li style="padding:3px 0">• Don't contradict yourself — wrong follow-up cancels right answer</li>
+        </ul>
+      </div>
+      <div>
+        <p class="section-label" style="color:var(--green)">Most Common FRQ Topics</p>
+        <ul style="list-style:none;font-size:0.87rem;color:var(--muted)">
+          <li style="padding:3px 0">• Energy calculations (EROI, % efficiency, 10% rule)</li>
+          <li style="padding:3px 0">• Population growth / doubling time math</li>
+          <li style="padding:3px 0">• Eutrophication cause-and-effect chains</li>
+          <li style="padding:3px 0">• Greenhouse effect + climate change impacts</li>
+          <li style="padding:3px 0">• Comparing energy sources (pros/cons)</li>
+          <li style="padding:3px 0">• Soil erosion and agricultural solutions</li>
+          <li style="padding:3px 0">• Data/graph interpretation (always one per exam)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="alert" style="margin-top:14px">
+      <strong>Calculation must-knows:</strong> Doubling time = 70/r | % energy efficiency = (useful out ÷ total in) × 100 | 10% rule: multiply by 0.1 per trophic level up | Population change = (births + immigration) − (deaths + emigration)
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>AP Environmental Science Cram Notes — 2026 Exam</p>
+  <p style="margin-top:5px">Units 5, 6, and 9 carry the most weight — prioritize those first. Good luck!</p>
+</div>
+
+</div>
+</body>
+</html>
